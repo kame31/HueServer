@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.text-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Hue Server</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryUtilities</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>inputString</key>
+		<string></string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>The command you want to run</string>
+		<key>AMDNote</key>
+		<string>Requires the Hue Server app</string>
+		<key>AMDSummary</key>
+		<string>Send a command to Hue Server</string>
+		<key>AMDWebsite</key>
+		<string>www.hue-remote.com</string>
+	</dict>
+	<key>AMKeywords</key>
+	<array>
+		<string>Philips</string>
+		<string>hue</string>
+		<string>AppleScript</string>
+		<string>OSC</string>
+	</array>
+	<key>AMName</key>
+	<string>Run command</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array/>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>(* Action name to be suggested to add prior to this action to make the task safer, e.g. com.apple.Automator.CopyFiles, goes here. *)</string>
+		<key>Level</key>
+		<integer>0</integer>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>13B42</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.thirtyOne.hue.Run-command</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Run command</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>5A3005</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13A595</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0502</string>
+	<key>DTXcodeBuild</key>
+	<string>5A3005</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 Andreas Rothaug. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>Run_command</string>
+</dict>
+</plist>

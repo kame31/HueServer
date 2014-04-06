@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+}
+
+.minus {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 95px;	
+	height:190px;
+}
+
+.plus {
+	position: absolute;
+	top: 10px;
+	left: 105px;
+	width: 90px;
+	height:190px;	
+}

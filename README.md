@@ -20,6 +20,7 @@ via
 - Estimote iBeacons
 - Speech-recognition
 - Leap Motion
+- Dashboard
 
 
 The Mac OS X app "Hue Server" allows you to control your Philips hue bulbs without having to take care of setting up a user, finding the bridge IP etc. Hue Server comes with an own human readable API making it very easy to create mighty results in home-automation and interaction-hacking.
@@ -97,6 +98,7 @@ Control a single light
 
 - XXX on
 - XXX off
+- XXX blink               // makes your lights blink once
 - XXX: ct:500             // 153 - 500 white color temperature from cold to warm
 - XXX: h:65535            // 0 - 65535 hue value, the color
 - XXX: s:255              // 0 - 255 saturation
@@ -111,6 +113,7 @@ Control all lights
 --------------
 - All on
 - All off
+- Blink
 - ct:500
 - h:65535
 - s:255
@@ -123,6 +126,7 @@ Control all lights
 - 10%
 - etc. up to
 - 100%
+
 
 
 Colors

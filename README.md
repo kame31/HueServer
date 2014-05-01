@@ -52,10 +52,11 @@ EXAMPLES:
 
 Use AppleScript
 --------------
+```AppleScript
 tell application "Hue Server" to run command "say:Hello World"<br/>
 tell application "Hue Server" to run command "Green"<br/>
 tell application "Hue Server" to run command "Random Album"<br/>
-
+```
 
 Use Automator
 --------------
@@ -68,17 +69,26 @@ See the demo processing sketch. Hue Server will send & receive OSC so you can ho
 Input port: 2331<br/>
 Output port: 9031<br/>
 "/hue/cmd"<br/>
+<br/>
+```Processing
+HUE_SERVER = new hueServer(2331, 9031, "127.0.0.1");
+HUE_SERVER.sendCommand("say:Hello World!");
+```
 
 Use Arduino
 --------------
+```Arduino
 Serial.begin(9600);<br/>
 Serial.print("say:Arduino is online!#");<br/>
 Serial.print("All on#");<br/>
 Serial.print("Green#");<br/>
+```
 <br/>
 Be sure to add a "#" after every command. Also enter your Arduino serial port via <br/>
 <br/>
+```Arduino
 "Arduino:/dev/cu.usbserial-A900adUQ" <br/>
+```
 <br/>
 replacing the string with your own device.<br/>
 <br/>

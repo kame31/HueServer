@@ -109,7 +109,6 @@ Control a single light
 - XXX: h:0 s:255 b:255
 - XXX:+                   // All lights will merge to the same brightness and brighten up.
 - XXX:-                   // Same but in the other direction. Dims all.
-- XXX Blink				  // blink effect for notifications
 
 Control all lights
 --------------
@@ -128,7 +127,6 @@ Control all lights
 - 10%
 - etc. up to
 - 100%
-- Blink
 
 
 

@@ -53,9 +53,9 @@ EXAMPLES:
 Use AppleScript
 --------------
 ```AppleScript
-tell application "Hue Server" to run command "say:Hello World"<br/>
-tell application "Hue Server" to run command "Green"<br/>
-tell application "Hue Server" to run command "Random Album"<br/>
+tell application "Hue Server" to run command "say:Hello World"
+tell application "Hue Server" to run command "Green"
+tell application "Hue Server" to run command "Random Album"
 ```
 
 Use Automator
@@ -78,16 +78,16 @@ HUE_SERVER.sendCommand("say:Hello World!");
 Use Arduino
 --------------
 ```Arduino
-Serial.begin(9600);<br/>
-Serial.print("say:Arduino is online!#");<br/>
-Serial.print("All on#");<br/>
-Serial.print("Green#");<br/>
+Serial.begin(9600);
+Serial.print("say:Arduino is online!#");
+Serial.print("All on#");
+Serial.print("Green#");
 ```
 <br/>
 Be sure to add a "#" after every command. Also enter your Arduino serial port via <br/>
 <br/>
 ```Arduino
-"Arduino:/dev/cu.usbserial-A900adUQ" <br/>
+"Arduino:/dev/cu.usbserial-A900adUQ"
 ```
 <br/>
 replacing the string with your own device.<br/>

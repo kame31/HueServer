@@ -64,8 +64,10 @@ Just download and install the Automator plugin.
 
 Use Processing, OSC
 --------------
-See the demo processing sketch. Hue Server will send & receive OSC so you can hook up almost anything.
-
+See the demo processing sketch. Hue Server will send & receive OSC so you can hook up almost anything.<br/>
+Input port: 2331<br/>
+Output port: 9031<br/>
+"/hue/cmd"<br/>
 
 Use Arduino
 --------------
@@ -107,7 +109,7 @@ Control a single light
 - XXX: h:0 s:255 b:255
 - XXX:+                   // All lights will merge to the same brightness and brighten up.
 - XXX:-                   // Same but in the other direction. Dims all.
-
+- XXX Blink				  // blink effect for notifications
 
 Control all lights
 --------------
@@ -126,6 +128,7 @@ Control all lights
 - 10%
 - etc. up to
 - 100%
+- Blink
 
 
 

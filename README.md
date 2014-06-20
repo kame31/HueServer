@@ -61,12 +61,12 @@ tell application "Hue Server" to run command "Random Album"
 
 tell application "Hue Server"
 	
-	turn on “XX”
-	turn off “XX”
-	toggle “XX”
+	turn on "XXX"
+	turn off "XXX"
+	toggle "XXX"
 
-	activate scene “XX”
-	run script “XX”
+	activate scene "XXX"
+	run script "XXX"
 
 	get lights
 	get groups
@@ -76,14 +76,51 @@ tell application "Hue Server"
 	get pipeline
 	get memories
 
-	get duration of scene “XX”
-	get ct for color “XX”
-	get hue for color “XX”
-	color is white “XX”
+	get duration of scene "XXX"
+	get ct for color "XXX"
+	get hue for color "XXX"
+	color is white "XXX"
 	
 end tell 
-
 ```
+
+
+```AppleScript
+tell application "Hue Server"
+	add to pipeline "XXX"
+	clear pipeline 
+end tell
+```
+
+The pipeline command lets you add all Hue Server commands to a list that will be executed one after another.<br/>
+ 
+Since light-scenes can have a custom transition-time of up to 2 hours the pipeline command will wait with the next command until your bulbs reach their new state. 
+
+Example: 
+
+A sequence for going to Bed:
+
+```AppleScript
+tell application "Hue Server"
+	clear pipeline
+	pipeline "Good Evening"
+	pipeline "Fade into the night -t:36000"
+	pipeline "Random Album"
+	pipeline "Good Night iTunes"
+	pipeline "say:Sleep tight!"
+end tell
+```
+
+AI Memory context: advanced feature for remembering a human context.
+
+```AppleScript
+tell application "Hue Server"
+	remember "XXX"
+	forget "XXX"
+	reset memory "XXX"
+end tell
+```
+
 
 Use Automator
 --------------

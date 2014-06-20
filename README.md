@@ -5,7 +5,8 @@ Add-ons for the Hue Server Mac OS X app (+ Philips hue)
 --------------
 
 
-Control your 
+Control your
+
 - Philips hue light-bulbs
 - trigger AppleScripts & iTunes playlists 
 - make Mac OS speak 
@@ -26,9 +27,9 @@ via
 The Mac OS X app "Hue Server" allows you to control your Philips hue bulbs without having to take care of setting up a user, finding the bridge IP etc. Hue Server comes with an own human readable API making it very easy to create mighty results in home-automation and interaction-hacking.
 
 
-www.hue-remote.com<br/>
-www.hue-remote.com/tutorials<br/>
-www.hue-remote.com/developers
+[www.hue-remote.com](http://www.hue-remote.com)<br/>
+[www.hue-remote.com/tutorials](http://www.hue-remote.com/tutorials)<br/>
+[www.hue-remote.com/developers](http://www.hue-remote.com/developers)<br/>
 
 
 
@@ -53,9 +54,35 @@ EXAMPLES:
 Use AppleScript
 --------------
 ```AppleScript
+
 tell application "Hue Server" to run command "say:Hello World"
 tell application "Hue Server" to run command "Green"
 tell application "Hue Server" to run command "Random Album"
+
+tell application "Hue Server"
+	
+	turn on “XX”
+	turn off “XX”
+	toggle “XX”
+
+	activate scene “XX”
+	run script “XX”
+
+	get lights
+	get groups
+	get colors
+	get scenes
+	get scripts
+	get pipeline
+	get memories
+
+	get duration of scene “XX”
+	get ct for color “XX”
+	get hue for color “XX”
+	color is white “XX”
+	
+end tell 
+
 ```
 
 Use Automator
@@ -66,6 +93,7 @@ Just download and install the Automator plugin.
 Use Processing, OSC
 --------------
 See the demo processing sketch. Hue Server will send & receive OSC so you can hook up almost anything.<br/>
+
 Input port: 2331<br/>
 Output port: 9031<br/>
 "/hue/cmd"<br/>
@@ -84,6 +112,7 @@ Serial.print("All on#");
 Serial.print("Green#");
 ```
 <br/>
+<br/>
 Be sure to add a "#" after every command. Also enter your Arduino serial port via <br/>
 <br/>
 ```Arduino
@@ -92,7 +121,7 @@ Be sure to add a "#" after every command. Also enter your Arduino serial port vi
 <br/>
 replacing the string with your own device.<br/>
 <br/>
-We recommend the Arduino tutorial on www.hue-remote.com/tutorials to get started.
+We recommend the Arduino tutorial on [www.hue-remote.com/tutorials](http://www.hue-remote.com/tutorials) to get started.
 
 
 Use the "search" field or your voice via Hue Remote on iOS
@@ -131,7 +160,7 @@ Control all lights
 - b:255
 - h:65535 s:255
 - h:65535 s:255 b:255
-- + / -
+- +/-
 - 0%
 - 5%
 - 10%
@@ -143,6 +172,7 @@ Control all lights
 Colors
 --------------
 (Will be applied to all lights that are on)<br/>
+
 - Red
 - Orange
 - Yellow
@@ -172,6 +202,7 @@ Colors
 Trigger light-scenes
 --------------
 (Use the name of your light-scene to trigger it)<br/>
+
 - Good Night
 - Shark Attack
 
@@ -185,8 +216,9 @@ If an AppleScript an a light-scene have the same name they "merge to one" and wi
 - iTunes next track
 - Good Night iTunes -t:600
 - Kitchen: h:23000 s:200 b:100 -t:0
-//Optionally you can override the default transition-time set on iOS by adding "-t:5" to your command. 
-//5 stands for 5 ms; you can set a transition-time between 0ms and 2h.
+
+Optionally you can override the default transition-time set on iOS by adding "-t:5" to your command. 
+5 stands for 5 ms; you can set a transition-time between 0ms and 2h.
 
 
 Special functions

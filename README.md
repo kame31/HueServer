@@ -51,6 +51,17 @@ EXAMPLES:
 ========================================================================
 
 
+Use the custom URL scheme 
+--------------
+
+Trigger all commands in Hue Server with a custom URL:
+
+```AppleScript
+hueserver://command=say:Hello%20World
+hueserver://command=Green
+```
+
+
 Use AppleScript
 --------------
 ```AppleScript
@@ -176,6 +187,7 @@ Control a single light
 
 - XXX on
 - XXX off
+- Toggle XXX				// toggle the powerstate of a single light or group
 - XXX blink               // makes your lights blink once
 - XXX: ct:500             // 153 - 500 white color temperature from cold to warm
 - XXX: h:65535            // 0 - 65535 hue value, the color
@@ -190,6 +202,7 @@ Control all lights
 --------------
 - All on
 - All off
+- Toggle All
 - Blink
 - ct:500
 - h:65535
@@ -235,6 +248,10 @@ Colors
 - Sleepy white
 - Romantic lights         // Dims the light and triggers a warm white.
 
+Combine color names with lights or groups:
+
+- Bedroom: Orange
+- Nightstand: Warm white
 
 Trigger light-scenes
 --------------
@@ -261,6 +278,7 @@ Optionally you can override the default transition-time set on iOS by adding "-t
 Special functions
 --------------
 - say:Hello World!        // Change the Mac OS system voice for more fun.
+- XXX -s 					// More efficiant say: (speech output) command
 - message:Hello World!    // Sends a message to the Mac OS notification center.
 - log:Hello World!        // Enter "Logs" into Hue Server to access the txt files. 
 - Logging on              // Enables the logging in txt files
@@ -274,7 +292,14 @@ Special functions
 
 - Where am I?             // The system will tell you about the current location.
 - Status                  // Nothing is true, everything is permitted. The direct AI feedback from the inner core.
-- Speech on               // "Status" and other commands will make the system react via speech.
+- Speech on               	// "Status" and other commands will make the system react via speech.
 - Speech off
+
+- "XXX -p"					// Add commands to a pipeline so they will be executed one after another
+- Clear pipeline
+
+- "XXX -r" 					// Remember/Reset and forget memories
+- "XXX -f"
+
 - activate                // shows the input window of Hue Server. Put this action into an AppleScript to create a custom shortcut. > tell application "Hue Server" to run command "activate"
 

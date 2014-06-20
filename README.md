@@ -22,6 +22,7 @@ via
 - Speech-recognition
 - Leap Motion
 - Dashboard
+- PHP, JavaScript, ActionScript
 
 
 The Mac OS X app "Hue Server" allows you to control your Philips hue bulbs without having to take care of setting up a user, finding the bridge IP etc. Hue Server comes with an own human readable API making it very easy to create mighty results in home-automation and interaction-hacking.
@@ -50,16 +51,6 @@ See the preferences.plist to hack around with the OSC input / output port and ot
 EXAMPLES:
 ========================================================================
 
-
-Use the custom URL scheme 
---------------
-
-Trigger all commands in Hue Server with a custom URL:
-
-```AppleScript
-hueserver://command=say:Hello%20World
-hueserver://command=Green
-```
 
 
 Use AppleScript
@@ -170,6 +161,16 @@ Be sure to add a "#" after every command. Also enter your Arduino serial port vi
 replacing the string with your own device.<br/>
 <br/>
 We recommend the Arduino tutorial on [www.hue-remote.com/tutorials](http://www.hue-remote.com/tutorials) to get started.
+
+
+Use the custom URL scheme 
+--------------
+
+Trigger all commands in Hue Server with a custom URL:
+
+[hueserver://command=say:Hello%20World](hueserver://command=say:Hello%20World)<br/>
+[hueserver://command=Green](hueserver://command=Green)
+<br/>
 
 
 Use the "search" field or your voice via Hue Remote on iOS

@@ -105,11 +105,11 @@ A sequence for going to Bed:
 ```AppleScript
 tell application "Hue Server"
 	clear pipeline
-	pipeline "Good Evening"
-	pipeline "Fade into the night -t:36000"
-	pipeline "Random Album"
-	pipeline "Good Night iTunes"
-	pipeline "say:Sleep tight!"
+	add to pipeline "Good Evening"
+	add to pipeline "Fade into the night -t:36000"
+	add to pipeline "Random Album"
+	add to pipeline "Good Night iTunes"
+	add to pipeline "say:Sleep tight!"
 end tell
 ```
 

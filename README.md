@@ -81,6 +81,10 @@ tell application "Hue Server"
 	get duration of scene "XXX"
 	get ct for color "XXX"
 	get hue for color "XXX"
+
+	save scene "XXX"
+	delete scene "XXX"
+
 	color is white "XXX"
 	
 end tell 
@@ -260,6 +264,8 @@ Trigger light-scenes
 
 - Good Night
 - Shark Attack
+- save:XXX
+- delete:XXX
 
 
 Run AppleScripts
